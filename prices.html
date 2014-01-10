@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aqua Public Pool</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/general.css" rel="stylesheet">
+<link href="css/accordion.css" rel="stylesheet">
+<link rel="shortcut icon" href="../favicon.ico">
+<!-- Tags for older devices -->
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<!-- For newer devices; we want to support:
+		-any width
+		-set the scale to 1 -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+<!--///////////////////////////////////////////////////////////////////////////// Masthead -->
+
+	<header class="masthead">
+	
+			<img src="../exercise-5/images/logo.svg" alt="Logo" class="logo">
+			
+	</header>
+	
+<!--///////////////////////////////////////////////////////////////////////////// Navigation -->
+
+			<header class="vs-header">
+				<ul class="vs-nav">
+					<li class="vs-nav"><a href="index.html">Home</a></li>
+					<li class="vs-nav"><a href="schedule.html">Schedule</a></li>
+					<li class="vs-nav"><a href="prices.html">Prices</a></li>
+				</ul>
+				<ul class="social">
+					<li><img src="../exercise-5/images/facebook_icon.svg" alt="Facebook"></li>
+					<li><img src="../exercise-5/images/twitter_icon.svg" alt="Twitter" ></li>
+				</ul>
+
+			</header>
+			
+<!--///////////////////////////////////////////////////////////////////////////// Content -->
+
+		<div class="vs-wrapper">
+			<h1>Prices</h1>
+		</div>
+	
+			<div class="content">
+				<ul id="cbp-ntaccordion" class="cbp-ntaccordion">
+					<li>
+						<h3 class="cbp-nttrigger">Senior, Student, Youth</h3>
+						<div class="cbp-ntcontent">
+								<h4>1 Session</h4>
+							<p>$2.90</p>
+								<h4>1 Month</h4>
+							<p>$62.25</p>
+								<h4>3 Months</h4>
+							<p>$123.50</p>
+								<h4>6 Months</h4>
+							<p>$229.50</p>
+								<h4>1 Year</h4>
+							<p>$415.00</p>
+						</div>
+					</li>
+					<li>
+						<h3 class="cbp-nttrigger">Adults</h3>
+						<div class="cbp-ntcontent">
+								<h4>1 Session</h4>
+							<p>$4.85</p>
+								<h4>1 Month</h4>
+							<p>$76.50</p>
+								<h4>3 Months</h4>
+							<p>$151.50</p>
+								<h4>6 Months</h4>
+							<p>$280.75</p>
+								<h4>1 Year</h4>
+							<p>$510.50</p>
+						</div>
+					</li>
+					<li>
+						<h3 class="cbp-nttrigger">Family</h3>
+						<div class="cbp-ntcontent">
+								<h4>1 Session</h4>
+							<p>$3.75</p>
+								<h4>1 Month</h4>
+							<p>$101.75</p>
+								<h4>3 Months</h4>
+							<p>$275.00</p>
+								<h4>6 Months</h4>
+							<p>$504.75</p>
+								<h4>1 Year</h4>
+							<p>$919.50</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+<!--///////////////////////////////////////////////////////////////////////////// Footer -->
+
+		<footer>
+			<p class="copyright">Copyright © 2013</p>
+		</footer>
+	
+	<script src="js/nav.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/accordion.js"></script>
+	<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpNTAccordion( [options] );
+				- destroy:
+				$( selector ).cbpNTAccordion( 'destroy' );
+				*/
+
+				$( '#cbp-ntaccordion' ).cbpNTAccordion();
+
+			} );
+		</script>
+</body>
+</html>

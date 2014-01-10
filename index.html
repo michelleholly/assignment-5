@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aqua Public Pool</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/general.css" rel="stylesheet">
+<link href="css/accordion.css" rel="stylesheet">
+<link rel="shortcut icon" href="../favicon.ico">
+<!-- Tags for older devices -->
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<!-- For newer devices; we want to support:
+		-any width
+		-set the scale to 1 -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+<!--///////////////////////////////////////////////////////////////////////////// Masthead -->
+
+	<header class="masthead">
+	
+			<img src="../exercise-5/images/logo.svg" alt="Logo" class="logo">
+			
+	</header>
+
+<!--///////////////////////////////////////////////////////////////////////////// Navigation -->
+
+			<header class="vs-header">
+				<ul class="vs-nav">
+					<li class="vs-nav"><a href="index.html">Home</a></li>
+					<li class="vs-nav"><a href="schedule.html">Schedule</a></li>
+					<li class="vs-nav"><a href="prices.html">Prices</a></li>
+				</ul>
+				<ul class="social">
+					<li><img src="../exercise-5/images/facebook_icon.svg" alt="Facebook"></li>
+					<li><img src="../exercise-5/images/twitter_icon.svg" alt="Twitter" ></li>
+				</ul>
+			</header>
+
+<!--///////////////////////////////////////////////////////////////////////////// Content -->
+	
+			<div class="vs-wrapper">
+				<h1>Aqua Swimming Pool</h1>
+			</div>
+			
+	<main class="content">
+		<div class="feature">
+			<img src="images/image1.jpeg" alt="girl at pool">
+			<div class="cbp-ntcontent cbp-ntaccordion">
+				<h4>About the pool</h4>
+			</div>
+			<p>Our 50-metre L-shaped pool has a diving area with a 3-platform Olympic diving tower, springboards, a slide, a bubbler and a swing rope. The pool has a flow-over-edge design that facilitates getting into and out of the water. A step-ramp in the shallow end makes for easier access. The high ceiling, excellent ventilation and natural light make this pool a pleasure to use. The pool is supervised by qualified, professional and caring lifeguards/aquatic instructors.</p>
+					</div>
+	</main>		
+
+			<div class="content">
+				<ul id="cbp-ntaccordion" class="cbp-ntaccordion">
+					<li>
+						<h3 class="cbp-nttrigger">Sunday</h3>
+						<div class="cbp-ntcontent">
+							<h4>7:00am - 5:00pm</h4>
+							<p>Members & Non-members</p>
+						</div>
+					</li>
+					
+					<li>
+						<h3 class="cbp-nttrigger">Monday</h3>
+						<div class="cbp-ntcontent">
+									<h4>6:00am - 9:00pm</h4>
+							<p>Members & Non-members</p>
+						</div>
+					</li>
+					
+					<li>
+						<h3 class="cbp-nttrigger">Tuesday</h3>
+						<div class="cbp-ntcontent">
+									<h4>6:00am - 9:00pm</h4>
+							<p>Members & Non-members</p>
+						</div>
+					</li>
+					
+					<li>
+						<h3 class="cbp-nttrigger">Wednesday</h3>
+						<div class="cbp-ntcontent">
+									<h4>6:00am - 9:00pm</h4>
+							<p>Members & Non-members</p>
+						</div>
+					</li>
+					
+					<li>
+						<h3 class="cbp-nttrigger">Thursday</h3>
+						<div class="cbp-ntcontent">
+									<h4>6:00am - 9:00pm</h4>
+							<p>Members & Non-members</p>
+						</div>
+					</li>
+					
+					<li>
+						<h3 class="cbp-nttrigger">Friday</h3>
+						<div class="cbp-ntcontent">
+									<h4>6:00am - 9:00pm</h4>
+							<p>Members & Non-members</p>
+						</div>
+					</li>
+
+					<li>
+						<h3 class="cbp-nttrigger">Saturday</h3>
+						<div class="cbp-ntcontent">
+									<h4>7:00am - 6:00pm</h4>
+							<p>Members & Non-members</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+		
+<!--///////////////////////////////////////////////////////////////////////////// Footer -->
+
+		<footer>
+			<p class="copyright">Copyright © 2013</p>
+		</footer>
+		
+	<script src="js/nav.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/accordion.js"></script>
+	<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpNTAccordion( [options] );
+				- destroy:
+				$( selector ).cbpNTAccordion( 'destroy' );
+				*/
+
+				$( '#cbp-ntaccordion' ).cbpNTAccordion();
+
+			} );
+		</script>
+</body>
+</html>
